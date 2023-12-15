@@ -59,7 +59,6 @@ header {
   color: var(--nav-text-color);
   font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.204px;
   border-bottom: 1px solid transparent;
 
   @media (max-width: 1140px) {
@@ -82,14 +81,9 @@ header {
   }
 }
 
-.hamburger-menu-icon:active {
-  transform: scale(1.1);
-}
-
 .button {
   width: 146px;
   height: 40px;
-  flex-shrink: 0;
   border-radius: 3px;
   border: 2px solid black;
   font-size: 12px;
@@ -129,7 +123,7 @@ header {
   gap: 1rem;
   align-items: center;
   text-align: center;
-  font-size: 3.313rem;
+  font-size: 53px;
   font-weight: 700;
 
   &::after {
@@ -154,7 +148,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  margin-top: 3.375rem;
+  margin-top: 54px;
 
   @media (max-width: 1140px) {
     margin-top: 36px;
@@ -205,7 +199,6 @@ header {
 .iphone {
   display: flex;
   justify-content: center;
-  width: 100%;
   padding-top: 41px;
   animation: moveIphone 5s linear infinite;
 
@@ -220,7 +213,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 73px;
   margin: 111px auto;
 
@@ -240,26 +232,21 @@ header {
 
 .card-gridWrapper {
   display: grid;
-  grid-template-columns: repeat(4, 0fr);
-  gap: 30px;
-  width: 100%;
+  grid-template-columns: repeat(4, 262px);
   justify-content: center;
 
   @media (max-width: 1140px) {
-    grid-template-columns: repeat(2, 0fr);
+    grid-template-columns: repeat(2, 164px);
     gap: 16px;
   }
 }
 
 .card-container {
   margin: auto;
-  width: 262px;
   height: 383px;
-  flex-shrink: 0;
   border-radius: 3px;
 
   @media (max-width: 1140px) {
-    width: 164px;
     height: 238px;
   }
 }
@@ -268,7 +255,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 75%;
   background-color: white;
   overflow: hidden;
@@ -288,12 +274,11 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 25%;
   background-color: var(--card-color);
 }
 
-/* Here comes from line 299 - 377 are the different card 
+/* Here comes from line 281 - 323 are the different card 
 titles with different prices*/
 .card-title {
   display: flex;
@@ -301,7 +286,6 @@ titles with different prices*/
   justify-content: center;
   gap: 1rem;
   color: var(--figma-black);
-  font-family: Fira Sans;
   font-size: 22px;
   font-weight: 700;
 }
@@ -310,7 +294,6 @@ titles with different prices*/
   content: "US$29";
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
-  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
 }
@@ -319,7 +302,6 @@ titles with different prices*/
   content: "US$19.90";
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
-  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
 }
@@ -328,7 +310,6 @@ titles with different prices*/
   content: "US$34";
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
-  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
 }
@@ -337,7 +318,6 @@ titles with different prices*/
   content: "US$9.99";
   color: rgba(0, 0, 0, 0.8);
   text-align: center;
-  font-family: Fira Sans;
   font-size: 16px;
   font-weight: 400;
 }
@@ -346,15 +326,13 @@ titles with different prices*/
 
 .BigCard-gridWrapper {
   display: grid;
-  grid-template-columns: repeat(2, 0fr);
-
+  grid-template-columns: repeat(2, 554px);
   justify-content: center;
   gap: 30px;
   padding-top: 64px;
 
   @media (max-width: 1140px) {
-    grid-template-columns: repeat(1, 0fr);
-    gap: 16px;
+    grid-template-columns: repeat(1, 334px);
   }
 }
 
@@ -363,14 +341,12 @@ titles with different prices*/
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 554px;
   height: 349px;
   border-radius: 3px;
   background-color: var(--bigcard-color);
   gap: 2rem;
 
   @media (max-width: 1140px) {
-    width: 334px;
     height: 216px;
   }
 }
@@ -494,7 +470,7 @@ footer {
 
 .message-icon {
   position: relative;
-  bottom: 75px;
+  bottom: 40px;
 }
 
 input:focus::placeholder {
@@ -503,12 +479,20 @@ input:focus::placeholder {
 
 #message {
   width: 300px;
-  height: 100px;
-  margin: 0 30px 30px 30px;
+  height: 50px;
+  margin: 0 30px 15px 30px;
   font-family: "Fira Sans";
   outline: none;
 
   @media (max-width: 1140px) {
     width: 200px;
   }
+}
+
+.form--btn {
+  width: 5rem;
+  height: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  left: 6rem;
 }
